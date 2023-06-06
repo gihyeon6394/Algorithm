@@ -4,7 +4,7 @@
 
 #### 개정 4판 Robert Sedgewick, Kevin Wayne 저
 
-<img src="![img.png](img.png)" width="30%">
+<img src="img.png" width="30%">
 
 ## Contents
 
