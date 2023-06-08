@@ -281,7 +281,3 @@ public class StdArrayIO {
     }
 
 }
-
-
-Copyright © 2000–2022,Robert Sedgewick and Kevin Wayne.
-        Last updated:Wed Aug 10 09:54:48 EDT 2022.

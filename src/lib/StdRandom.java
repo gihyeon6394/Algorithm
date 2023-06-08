@@ -723,7 +723,3 @@ public final class StdRandom {
     }
 
 }
-
-
-Copyright © 2000–2022,Robert Sedgewick and Kevin Wayne.
-        Last updated:Sat Nov 26 11:29:53 EST 2022.
