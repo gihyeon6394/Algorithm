@@ -14,7 +14,9 @@ public class Basic {
         //practice();
 
 
-        testHistogram();
+        // testHistogram();
+        System.out.println(exR1(6));
+        System.out.println(exR1(6).equals("311361142246"));
     }
 
     private static void testHistogram() {
@@ -355,6 +357,32 @@ public class Basic {
         return resultVal;
 
     }
+
+
+    /**
+     * 1.1.16 exR1(6)의 리턴값
+     */
+    private static String exR1(int n) {
+        // n이 0보다 같거나 작으면 return
+        if (n <= 0) return "";
+
+        // return
+        //  exR1(3)     6       exR1(4)      6
+        // ""+3+exR1(1)+3
+        //  1+""+1
+        // 3113
+        //                      exr1(1)+4+exr1(2)+4
+        //                      11+4+exr1(2)+4
+        //                      2+""+2
+        //                      114224
+        // 311361142246
+        //
+        //
+        //
+        //
+        return exR1(n - 3) + n + exR1(n - 2) + n;
+    }
+
 
 }
 
