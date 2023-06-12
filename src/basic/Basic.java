@@ -15,8 +15,9 @@ public class Basic {
 
 
         // testHistogram();
-        System.out.println(exR1(6));
-        System.out.println(exR1(6).equals("311361142246"));
+        //System.out.println(exR1(6));
+        // System.out.println(exR1(6).equals("311361142246"));
+        // exR2(2);
     }
 
     private static void testHistogram() {
@@ -384,5 +385,14 @@ public class Basic {
     }
 
 
+    /**
+     * 1.1.17
+     * Exception in thread "main" java.lang.StackOverflowError
+     * */
+    private static String exR2(int n) {
+        String s = exR2(n - 3) + n + exR2(n - 2) + n;
+        if (n <= 0) return "";
+        return s;
+    }
 }
 
