@@ -1,6 +1,5 @@
 package basic;
 
-import lib.StdIn;
 import lib.StdOut;
 
 import java.util.Arrays;
@@ -12,7 +11,29 @@ public class Basic {
 
         //System.out.println(1/0);
         // System.out.println(1.0 / 0.0);
-        practice();
+        //practice();
+
+
+        testHistogram();
+    }
+
+    private static void testHistogram() {
+
+        //1. 정수 i가 몇번 등장했는지 알려주는 지
+
+        int[] arr1 = new int[]{1, 1, 3, 3, 3, 5};
+        int[] resultVal1 = histogram(arr1, arr1.length);
+
+        System.out.println(Arrays.toString(resultVal1));
+
+        //2. 모든 항목이 0 과 M-1에 있을 때
+
+        int[] arr2 = new int[]{2, 2, 3, 3, 3, 5, 3};
+        int[] resultVal2 = histogram(arr2, arr2.length);
+
+        System.out.println(Arrays.toString(resultVal2));
+        System.out.println("합 : " + sumFromArr(resultVal2));
+
     }
 
     /**
@@ -93,7 +114,6 @@ public class Basic {
         practice14(16);
         practice14(17);
         // TODO. 15
-
 
 
     }
@@ -266,5 +286,75 @@ public class Basic {
         System.out.println(result);
 
     }
+
+
+    /**
+     * 1.1.15
+     *
+     * @param int[] a, int M
+     * @return 크기가 M인 int배열,  i번째 항목은 a[]에서 정수 i의 등장 횟수
+     * 만약 a[] 각 항목들이 0과 M-1 사이라면 리턴되는 배열의 총합이 a.length와 같아야함
+     */
+
+    public static int[] histogram(int[] a, int M) {
+
+        // M = size of a
+
+        int[] resultArr = new int[M];
+
+        int existOuter = 0; // 0 모든 항목이  0과 M-1 사이임
+        for (int i = 0; i < M; i++) {
+            resultArr[i] = getCountFromArr(a, i);
+
+            if (!(a[i] >= 0 && a[i] <= M - 1)) {
+                existOuter = 1;
+            }
+        }
+
+        if (existOuter == 1) {
+            int sum = sumFromArr(resultArr);
+
+            if (sum != a.length) {
+                resultArr = validateArr(resultArr, M);
+            }
+        }
+        return resultArr;
+    }
+
+    /**
+     * m = 같아야하는 값
+     *
+     * @return
+     */
+    private static int[] validateArr(int[] a, int m) {
+        int sum = sumFromArr(a); // 10
+        int lastVal = a[a.length - 1];  // 7
+        a[a.length - 1] = a[a.length - 1] + (sum - lastVal);
+
+        return a;
+
+    }
+
+    private static int sumFromArr(int[] a) {
+        int sum = 0;
+
+        for (int i = 0; i < a.length; i++) {
+            sum += a[i];
+        }
+        return sum;
+    }
+
+    private static int getCountFromArr(int[] a, int val) {
+        int resultVal = 0;
+
+        // val이 등장한 회수 카운트
+        for (int i = 0; i < a.length; i++) {
+            if (a[i] == val)
+                resultVal++;
+        }
+        return resultVal;
+
+    }
+
 }
 
