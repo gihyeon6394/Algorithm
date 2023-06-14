@@ -388,11 +388,33 @@ public class Basic {
     /**
      * 1.1.17
      * Exception in thread "main" java.lang.StackOverflowError
-     * */
+     */
     private static String exR2(int n) {
         String s = exR2(n - 3) + n + exR2(n - 2) + n;
         if (n <= 0) return "";
         return s;
     }
+
+    /**
+     * 1.18
+     * mystery(2, 25)의 값, mystery(3, 11)의 값
+     * a,b가 정수라면?
+     * + -> * 로 바꾸고, return 0 -> return 1로 바꾸면 mystery(a,b)의 값은?
+     */
+
+    public static int mystery(int a, int b) {
+        if (b == 0) return 0;
+        if (b % 2 == 0) return mystery(a + a, b / 2);
+        return mystery(a + a, b / 2) + a;
+    }
+
+    /**
+     *
+     * 중지 조건 : b = 0
+     *
+     * 짝수면 재귀
+     * 아니면 재귀
+     * */
+
 }
 
