@@ -1,20 +1,19 @@
 package basic;
 
-import lib.StdIn;
-import lib.StdOut;
+import java.util.Scanner;
 
 public class Average {
 
     public static void main(String[] args) {
         double sum = 0.0;
         int cnt = 0;
-
-        while (!StdIn.isEmpty()) {
-            sum += StdIn.readDouble();
+        Scanner scanner = new Scanner(System.in);
+        while (scanner.hasNext()) {
+            sum += scanner.nextDouble();
             cnt++;
         }
-
         double avg = sum / cnt;
-        StdOut.printf("Average is %.5f\n", avg);
+        System.out.printf("Average is %.5f\n", avg);
     }
 }
+

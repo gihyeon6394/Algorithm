@@ -7,17 +7,17 @@ public class Example {
         // See Algorithms 2.1, 2.2, 2.3, 2.4, 2.5, or 2.7.
     }
 
-    private static boolean less(Comparable v, Comparable w) {
+    protected static boolean less(Comparable v, Comparable w) {
         return v.compareTo(w) < 0;
     }
 
-    private static void exch(Comparable[] a, int i, int j) {
+    protected static void exch(Comparable[] a, int i, int j) {
         Comparable swap = a[i];
         a[i] = a[j];
         a[j] = swap;
     }
 
-    private static void show(Comparable[] a) {
+    protected static void show(Comparable[] a) {
         // Print the array, on a single line.
         for (int i = 0; i < a.length; i++)
             System.out.println(a[i] + " ");
