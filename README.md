@@ -22,8 +22,8 @@
 
 ## Contents
 
-1. [기초 개념](src/basic/README.md)
-2. 정렬
+1. 기초 개념
+2. [정렬](contents/2_정렬/README.md)
 3. 탐색 알고리즘
 4. 그래프
 5. 문자열
