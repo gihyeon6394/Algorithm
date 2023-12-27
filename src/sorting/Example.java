@@ -1,7 +1,5 @@
 package sorting;
 
-import java.util.Date;
-
 public class Example {
     public static void sort(Comparable[] a) {
         // See Algorithms 2.1, 2.2, 2.3, 2.4, 2.5, or 2.7.
@@ -39,4 +37,5 @@ public class Example {
         assert isSorted(a);
         show(a);
     }
+
 }
