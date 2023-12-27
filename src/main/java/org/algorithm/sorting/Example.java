@@ -1,4 +1,4 @@
-package sorting;
+package org.algorithm.sorting;
 
 public class Example {
     public static void sort(Comparable[] a) {

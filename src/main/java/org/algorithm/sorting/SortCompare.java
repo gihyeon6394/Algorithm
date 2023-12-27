@@ -1,4 +1,4 @@
-package sorting;
+package org.algorithm.sorting;
 
 public class SortCompare {
 
@@ -37,7 +37,7 @@ public class SortCompare {
         String algSelection = "Selection";
 
         int lengthArr = 1000; // 배열의 길이
-        int cntArr = 100; // 배열의 개수
+        int cntArr = 10000; // 배열의 개수
 
         double t1 = timeRandomInput(algInsertion, lengthArr, cntArr);
         double t2 = timeRandomInput(algSelection, lengthArr, cntArr);

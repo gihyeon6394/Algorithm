@@ -1,7 +1,7 @@
-package basic;
+package org.algorithm.basic;
 
-import lib.StdOut;
-import lib.StdRandom;
+import org.algorithm.lib.StdOut;
+import org.algorithm.lib.StdRandom;
 
 public class RandomSeq {
 

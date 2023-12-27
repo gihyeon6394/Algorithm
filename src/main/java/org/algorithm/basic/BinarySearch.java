@@ -1,8 +1,8 @@
-package basic;
+package org.algorithm.basic;
 
-import lib.In;
-import lib.StdIn;
-import lib.StdOut;
+import org.algorithm.lib.In;
+import org.algorithm.lib.StdIn;
+import org.algorithm.lib.StdOut;
 
 import java.util.Arrays;
 

@@ -9,7 +9,7 @@
  *
  ******************************************************************************/
 
-package lib;
+package org.algorithm.lib;
 
 import java.util.ArrayList;
 import java.util.InputMismatchException;

@@ -1,4 +1,4 @@
-package lib;
+package org.algorithm.lib;
 
 /******************************************************************************
  *  Compilation:  javac StdStats.java

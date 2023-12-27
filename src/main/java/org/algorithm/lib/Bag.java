@@ -1,4 +1,4 @@
-package lib;
+package org.algorithm.lib;
 
 /******************************************************************************
  *  Compilation:  javac Bag.java
@@ -29,8 +29,8 @@ package lib;
  *
  ******************************************************************************/
 
-import lib.StdIn;
-import lib.StdOut;
+import org.algorithm.lib.StdIn;
+import org.algorithm.lib.StdOut;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;

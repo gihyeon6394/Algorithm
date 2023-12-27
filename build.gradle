@@ -1,0 +1,39 @@
+plugins {
+    id 'java'
+    id "me.champeau.jmh" version "0.7.2"
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // testImplementation : test dir의 컴파일 시 필요한 library
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+
+    testImplementation 'org.hamcrest:hamcrest:2.2'
+
+    // compileOnly : 컴파일 시 필요한 library (runtime 시 필요하지 않음)
+    compileOnly 'org.projectlombok:lombok:1.18.24'
+
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.16.0'
+
+    implementation 'org.apache.logging.log4j:log4j-api:2.22.0'
+    implementation 'org.apache.logging.log4j:log4j-core:2.22.0'
+
+}
+
+test {
+    useJUnitPlatform()
+}
+
+jmh {
+    warmupIterations = 1
+    fork = 3
+    iterations = 5
+    includes = ['CompareSorting']
+}

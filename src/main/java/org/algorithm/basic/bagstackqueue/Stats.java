@@ -1,8 +1,7 @@
-package basic.bagstackqueue;
+package org.algorithm.basic.bagstackqueue;
 
-
-import lib.Bag;
-import lib.StdIn;
+import org.algorithm.lib.Bag;
+import org.algorithm.lib.StdIn;
 
 /**
  * Bag client code

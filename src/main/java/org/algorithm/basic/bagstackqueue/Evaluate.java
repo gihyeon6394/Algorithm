@@ -1,8 +1,5 @@
-package basic.bagstackqueue;
+package org.algorithm.basic.bagstackqueue;
 
-import lib.StdIn;
-
-import java.util.Scanner;
 import java.util.Stack;
 
 /**

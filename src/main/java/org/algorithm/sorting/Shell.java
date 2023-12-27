@@ -1,6 +1,6 @@
-package sorting;
+package org.algorithm.sorting;
 
-import static sorting.Example.*;
+import static org.algorithm.sorting.Example.*;
 
 public class Shell {
 

@@ -1,11 +1,11 @@
-package sorting;
+package org.algorithm.sorting;
 
-import static sorting.Example.*;
+import static org.algorithm.sorting.Example.*;
 
 public class Insertion {
 
+    // a[]를 오름차순으로 정렬
     public static void sort(Comparable[] a) {
-        // a[]를 오름차순으로 정렬
 
         int N = a.length;
 
@@ -19,7 +19,7 @@ public class Insertion {
 
     public static void main(String[] args) {
         // Read strings from standard input, sort them, and print.
-        String[] a = new String[]{"c", "a", "b", "d", "e", "f", "g", "h", "i", "j", "k"};
+        String[] a = new String[]{"S", "O", "R", "T", "E", "X", "A", "M", "P", "L", "E"};
         sort(a);
         assert isSorted(a);
         show(a);
