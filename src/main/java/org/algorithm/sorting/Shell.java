@@ -15,27 +15,22 @@ public class Shell {
 
         // h-정렬
         while (h >= 1) {
-            System.out.println("h: " + h);
+
             for (int i = h; i < N; i++) {
-                System.out.print(a[i]);
 
                 for (int j = i; j >= h && less(a[j], a[j - h]); j -= h) {
                     exch(a, j, j - h);
                 }
-
             }
-
 
             h = h / 3;
         }
     }
 
     public static void main(String[] args) {
-        // Read strings from standard input, sort them, and print.
         String[] a = new String[]{"S", "H", "E", "L", "L", "S", "O", "R", "T", "E", "X", "A", "M", "P", "L", "E"};
         sort(a);
         assert isSorted(a);
-        System.out.println("Result");
         show(a);
     }
 }

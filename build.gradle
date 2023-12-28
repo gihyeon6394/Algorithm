@@ -33,7 +33,7 @@ test {
 
 jmh {
     warmupIterations = 1
-    fork = 3
+    fork = 1
     iterations = 5
     includes = ['CompareSorting']
 }

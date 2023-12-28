@@ -20,7 +20,7 @@ public class CompareSorting {
 
     @Benchmark
     public void sorting_insertion() {
-        Double[] arr = generateRandomArray(10000);
+        Double[] arr = generateRandomArray(1000);
         Insertion.sort(arr);
     }
 
@@ -33,7 +33,7 @@ public class CompareSorting {
 
     @Benchmark
     public void sorting_selection() {
-        Double[] arr = generateRandomArray(10000);
+        Double[] arr = generateRandomArray(1000);
         Selection.sort(arr);
     }
 
@@ -41,5 +41,11 @@ public class CompareSorting {
     public void sorting_selection_ordered() {
         Double[] arr = new Double[]{0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9};
         Selection.sort(arr);
+    }
+
+    @Benchmark
+    public void sorting_shell() {
+        Double[] arr = generateRandomArray(1000);
+        Shell.sort(arr);
     }
 }
