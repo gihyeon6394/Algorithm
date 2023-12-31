@@ -5,6 +5,7 @@ public class Example {
         // See Algorithms 2.1, 2.2, 2.3, 2.4, 2.5, or 2.7.
     }
 
+    // return v < w
     protected static boolean less(Comparable v, Comparable w) {
         return v.compareTo(w) < 0;
     }
