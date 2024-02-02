@@ -35,5 +35,5 @@ jmh {
     warmupIterations = 1
     fork = 1
     iterations = 5
-    includes = ['CompareSortingMerge']
+    includes = ['CompareSortingQuickMerge']
 }
