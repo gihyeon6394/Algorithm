@@ -1,5 +1,10 @@
 package org.algorithm.sorting;
 
+/*
+ * Copyright © 2000–2019, Robert Sedgewick and Kevin Wayne.
+ * Last updated: Thu Aug 11 09:07:21 EDT 2022.
+ */
+
 import org.algorithm.lib.In;
 import org.algorithm.lib.StdOut;
 
@@ -29,23 +34,24 @@ import org.algorithm.lib.StdOut;
  ******************************************************************************/
 
 /**
- *  The {@code Multiway} class provides a client for reading in several
- *  sorted text files and merging them together into a single sorted
- *  text stream.
- *  This implementation uses a {@link IndexMinPQ} to perform the multiway
- *  merge.
- *  <p>
- *  For additional documentation, see <a href="https://algs4.cs.princeton.edu/24pq">Section 2.4</a>
- *  of <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
+ * The {@code Multiway} class provides a client for reading in several
+ * sorted text files and merging them together into a single sorted
+ * text stream.
+ * This implementation uses a {@link IndexMinPQ} to perform the multiway
+ * merge.
+ * <p>
+ * For additional documentation, see <a href="https://algs4.cs.princeton.edu/24pq">Section 2.4</a>
+ * of <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
  *
- *  @author Robert Sedgewick
- *  @author Kevin Wayne
+ * @author Robert Sedgewick
+ * @author Kevin Wayne
  */
 
 public class Multiway {
 
     // This class should not be instantiated.
-    private Multiway() { }
+    private Multiway() {
+    }
 
     // merge together the sorted input streams and write the sorted result to standard output
     private static void merge(In[] streams) {
@@ -67,10 +73,10 @@ public class Multiway {
 
 
     /**
-     *  Reads sorted text files specified as command-line arguments;
-     *  merges them together into a sorted output; and writes
-     *  the results to standard output.
-     *  Note: this client does not check that the input files are sorted.
+     * Reads sorted text files specified as command-line arguments;
+     * merges them together into a sorted output; and writes
+     * the results to standard output.
+     * Note: this client does not check that the input files are sorted.
      *
      * @param args the command-line arguments
      */
