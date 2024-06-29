@@ -37,7 +37,7 @@
 1. 기초 개념
 2. [정렬](contents/2_정렬/README.md)
 3. [탐색 알고리즘](contents/3_탐색_알고리즘/README.md)
-4. 그래프
+4. [그래프](contents/4_그래프/README.md)
 5. 문자열
 6. 맥락
 
